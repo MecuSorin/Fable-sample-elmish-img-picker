@@ -1,11 +1,10 @@
-A counter demo of [Elmish](https://github.com/fable-compiler/fable-elmish).
+The demo of an image picker (the Cmd.ofFunc can be easy changed to a Cmd.ofAsync that will fetch the data from internet)
 ========
 
-This is a port of Elm's counter implemented in F# and targeting Fable and React.
+## Requirements
+- Dotnet SDK
+- Yarn
 
-
-## Live sample
-The sample is live and you can try it [here](https://fable-elmish.github.io/sample-react-counter).
 
 ## Build locally and start hot-reloading watch
 1. `./build.sh Watch` on *nix or `build Watch` on Windows
