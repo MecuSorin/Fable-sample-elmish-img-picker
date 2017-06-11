@@ -36,6 +36,13 @@ let update (msg:Msg) (model:Model) =
         | ImagePicked (_, images) -> ImagePicked (url, images)
         | _ -> Error "Invalid state: Image was picked but i have no images list"
     | LoadedImages images ->
+        let cats = [|
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJB1DCcOWYml3Mni8ra2yppq-S0nrhG7Y0Zn7VMVzaC3Sw-W1Z"
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGsNE90XVjKjGeVwu76dCyft44wphkhQJ6nJ7FMr9l2mCLB6Px_g"
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiiu3AGeFA-5Jb6UVWIKQ5EfIvtI9Lp7QHV8loDP4YvBrVrJneEA"
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT99ACj8dZ91EXXS-bslXJg9gPv3lRzoqPTa1vv8qGcNi0shtNVhg"
+        |]
+    
         Images images
     | LoadImages -> LoadingImages
 
